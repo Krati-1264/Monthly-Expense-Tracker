@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100..700&family=Poppins:wght@100..900&display=swap');
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.container {
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    margin: 10px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex-grow: 1;
+    height: auto;
+}
+
+h1, h2 {
+    text-align: center;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 30px;
+}
+
+#Bal {
+    color: rgb(1, 120, 1);
+    background-image: linear-gradient(to top right, rgba(0, 145, 0, 0.571), rgba(224, 255, 114, 0.749));
+}
+
+#Exp {
+    color: rgb(186, 2, 2);
+    background-image: linear-gradient(to top right, rgba(219, 2, 2, 0.607), rgba(254, 158, 158, 0.779));
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+input, button {
+    margin: 20px 0;
+    padding: 10px;
+}
+
+button {
+    background-color: #028575;
+    border-radius: 10px;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #04bba6;
+}
+
+ul {
+    border-radius: 10px;
+    margin: 20px;
+    
+}
+
+li {
+    font-weight: 100;
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    min-width: 300px;
+    height: 50px;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid #ccc;
+    
+}
+
+.delete {
+    background-color: #bd2d4f;
+    border-radius: 15px;
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+}
+
+.delete:hover {
+    background-color: rgb(255, 0, 85);
+}
+
+.recent-expenses{
+    margin-top: 20px;
+    height: auto;
+    overflow: auto;
+}
+
+#dte{
+  font-weight: 300;
+}
+
+#desc{
+  font-weight: 500;
+}
+
+#amt{
+  font-weight: 500;
+  border-radius: 20px;
+  padding: 10px;
+  background-image: linear-gradient(to top right, rgba(219, 2, 2, 0.607), rgba(254, 158, 158, 0.779));
+}
+
+.charts {
+    display:flex;
+    margin-bottom: 30px;
+}
+
+.left-section {
+    flex: 1;
+    padding-right: 20px;
+    min-width: 30px;
+}
+
+.expense-list {
+  max-height: none; 
+  overflow: visible; 
+  margin-bottom: 20px; 
+}
+
+.right-section {
+    flex: 1;
+    padding-left: 20px;
+}
+
+.charts canvas {
+    width: 100% !important;
+    height: 250px !important;
+}
+
+#chart-title {
+    margin-bottom: 10px;
+}
