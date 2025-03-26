@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Monthly Expense Tracker</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="left-section">
+            <h1 id= "MainHeading">Monthly Expense Tracker</h1>
+            <form id="expense-form">
+                <input type="text" id="description" placeholder="Description" required>
+                <input type="number" id="amount" placeholder="Amount" required>
+                <input type="date" id="date" required>
+                <button type="submit">Add Expense</button>
+            </form>
+            <h2 id="Bal">Account Balance: ₹<span id="balance">20000</span></h2>
+            <h2 id="Exp">Total Expenses: ₹<span id="total-expenses">0</span></h2>
+
+        </div>
+
+        <div class="right-section">
+            <div class="recent-expenses">
+                <h2>Recent Expenses</h2>
+                <ul id="recent-expense-list"></ul>
+                <button id="see-all">See All Expenses</button>
+                <button id="hide-all" style="display:none;">Hide All Expenses</button>
+            </div>
+            <div class="all-expenses">
+                <ul id="expense-list" style="display:none;"></ul>
+            </div>
+        </div>
+        <div class="charts">
+                <h2>Monthly Expenses</h2>
+                <canvas id="monthly-expenses-chart" width="300" height="200"></canvas>
+                <h2>Expense Categories</h2>
+                <canvas id="category-expenses-chart" width="300" height="200"></canvas>
+            </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
